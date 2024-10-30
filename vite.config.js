@@ -10,6 +10,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/', // thêm base nếu cần thiết
     plugins: [
         vue(),
         vueJsx(),
