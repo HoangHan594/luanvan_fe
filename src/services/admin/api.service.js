@@ -7,7 +7,7 @@ const commonConfig = {
     },
 };
 export default (baseURL) => {
-    const baseURL = process.env.VUE_APP_API_URL;
+    baseURL = process.env.VUE_APP_API_URL;
     return axios.create({
         baseURL,
         ...commonConfig,
