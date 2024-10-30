@@ -31,7 +31,7 @@ export default defineConfig({
         port: 3001,
         proxy: {
             "/api": {
-                target: "http://localhost:3000/",
+                target: "https://luanvan-fe.vercel.app/",
                 changeOrigin: true,
                 rewrite: path => path.replace(/^\/api/, ''),
             },
