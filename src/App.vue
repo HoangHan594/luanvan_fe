@@ -17,10 +17,9 @@ export default {
 </script> -->
 <template>
   <div>
-
     <div id="app">
+      <h1>API Target: {{ apiTarget }}</h1> <!-- Hiển thị API Target -->
       <router-view />
-      
     </div>
   </div>
 </template>
@@ -30,12 +29,13 @@ export default {
   data() {
     return {
       dbStatus: 'unknown',
+      apiTarget: process.env.API_TARGET, // Lấy API Target từ biến môi trường
     };
   },
   methods: {
     async checkDatabaseConnection() {
       try {
-        const response = await fetch('https://luanvan-1-kmlh.onrender.com');
+        const response = await fetch(this.apiTarget); // Sử dụng apiTarget để kiểm tra kết nối
         const data = await response.json();
 
         if (data.database === 'connected') {
@@ -56,3 +56,4 @@ export default {
   },
 };
 </script>
+

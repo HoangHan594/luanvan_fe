@@ -15,6 +15,9 @@ const apiTarget = isProduction ? 'https://luanvan-1-kmlh.onrender.com' : 'http:/
 console.log('API Target:', apiTarget);
 
 export default defineConfig({
+    define: {
+        'process.env.API_TARGET': JSON.stringify(apiTarget), // Truyền API Target vào môi trường
+    },
     base: isProduction ? './' : '/', // Thay đổi base cho môi trường sản xuất
     plugins: [
         vue(),
