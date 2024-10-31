@@ -6,7 +6,7 @@
       {{ book.bookTitle }}
     </div>
     <div class="p-1">
-      <img class="center-image" width="150px" height="200px" :src="'/api/uploads/' + book.thumbnail" alt="Hình sách"
+      <img class="center-image" width="150px" height="200px" :src="'https://luanvan-1-kmlh.onrender.com/uploads/' + book.thumbnail" alt="Hình sách"
         style="max-width: 100%;" />
     </div>
     <div class="p-1">

@@ -3,7 +3,7 @@
     <div class="book-grid">
       <div class="book" v-for="(book, index) in displayedBooks" :key="book._id"
         :class="{ active: index === activeIndex }" @click="updateActiveIndex(index)">
-        <img :src="'/api/uploads/' + book.thumbnail" alt="Book Image" />
+        <img :src="'https://luanvan-1-kmlh.onrender.com/uploads/' + book.thumbnail" alt="Book Image" />
         <div class="book-details">
           <p class="book-title">{{ truncate(book.bookTitle) }}</p>
           <p class="author">{{ book.author }}</p>
