@@ -7,8 +7,8 @@
         "node": "20.x"
     },
     "scripts": {
-        "dev": "vite --host",
-        "build": "vite build --base=./",
+        "dev": "cross-env BUILD_MODE=dev vite --host",
+        "build": "cross-env BUILD_MODE=production vite build --base=./",
         "lint": "eslint . --ext .js,.vue",
         "lint:fix": "eslint . --ext .js,.vue --fix",
         "preview": "vite preview"
@@ -32,6 +32,7 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.0.5",
         "@vitejs/plugin-vue-jsx": "^4.0.1",
+        "cross-env": "^7.0.3",
         "unplugin-vue-components": "^0.27.4",
         "vite": "^5.3.1"
     }
