@@ -2,7 +2,7 @@ import createApiClient from "./api.auth.service";
 
 class AuthorizationServiceClient {
 
-    constructor(baseUrl = "/api/auth") {
+    constructor(baseUrl = "https://luanvan-1-kmlh.onrender.com/api/auth") {
         this.api = createApiClient(baseUrl);
     }
 
