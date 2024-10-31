@@ -1,7 +1,7 @@
 import createApiClient from "./api.service";
 
 class BookService {
-    constructor(baseUrl = "/api/books") {
+    constructor(baseUrl = "https://luanvan-1-kmlh.onrender.com/books") {
         this.api = createApiClient(baseUrl);
     }
     async getAll() {
