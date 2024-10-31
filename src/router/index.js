@@ -4,14 +4,14 @@ import clientRoutes from './client.route'
 import adminRoutes from './admin.route'
 
 const routes = [
-  ...clientRoutes,
-  ...adminRoutes,
+    ...clientRoutes,
+    ...adminRoutes,
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+    history: createWebHistory('/'), // Sử dụng '/' nếu ứng dụng của bạn nằm ở root
+    routes
 })
 
-export default router
 
+export default router
