@@ -9,7 +9,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory('/'), // Sử dụng '/' nếu ứng dụng của bạn nằm ở root
+    history: createWebHistory('/'),
     routes
 })
 
