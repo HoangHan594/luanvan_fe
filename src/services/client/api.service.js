@@ -11,7 +11,6 @@ const commonConfig = {
     // },
 };
 export default (baseURL) => {
-    baseURL = process.env.VUE_APP_API_URL;
     return axios.create({
         baseURL,
         ...commonConfig,
