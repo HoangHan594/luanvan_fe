@@ -2,6 +2,7 @@
     <AppHeaderHome />
     <div class="homepage">
         <div class="content">
+            <h1>hello</h1>
             <h1>BOOKSTORE</h1>
             <p>Để thực hiện mượn sách của cửa hàng
                 <br> Vui lòng hãy đăng nhập !
