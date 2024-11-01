@@ -54,7 +54,7 @@ const clientRoutes = [{
     },
     {
         path: "/seen-books",
-        name: "seen--books",
+        name: "seen-books",
         component: () =>
             import ("@/views/client/pages/home/SeenBooks.vue"),
     },
