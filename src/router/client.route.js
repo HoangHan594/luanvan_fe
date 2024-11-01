@@ -53,8 +53,8 @@ const clientRoutes = [{
             import ("@/views/client/pages/home/Home.vue"),
     },
     {
-        path: "https://luanvan-1-kmlh.onrender.com/seen-books",
-        name: "seen-books",
+        path: "/seen-books",
+        name: "seen--books",
         component: () =>
             import ("@/views/client/pages/home/SeenBooks.vue"),
     },
