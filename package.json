@@ -7,10 +7,8 @@
         "node": "20.x"
     },
     "scripts": {
-        "dev": "cross-env BUILD_MODE=dev vite --host",
-        "build": "cross-env BUILD_MODE=production vite build --base=./",
-        "lint": "eslint . --ext .js,.vue",
-        "lint:fix": "eslint . --ext .js,.vue --fix",
+        "dev": "vite",
+        "build": "vite build",
         "preview": "vite preview"
     },
     "dependencies": {
