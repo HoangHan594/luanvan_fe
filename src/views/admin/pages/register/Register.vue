@@ -1,5 +1,5 @@
 <template>
-  <h1>Không có chức năng đký</h1>
+  <h1>Không có chức năng đăng ký</h1>
 </template>
 
 <style scoped>

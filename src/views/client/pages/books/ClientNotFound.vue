@@ -2,7 +2,7 @@
     <div class="page">
         <p class="centered-text">
             Oops, không thể tìm thấy trang. Trở về
-            <router-link to="/admin/books">trang chủ.</router-link>
+            <router-link to="/books">trang chủ.</router-link>
         </p>
     </div>
 </template>
