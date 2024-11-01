@@ -1,7 +1,7 @@
 import createApiClient from "./api.service";
 
 class BookService {
-    constructor(baseUrl = "/books") {
+    constructor(baseUrl = "/api/books") {
         this.api = createApiClient(baseUrl);
     }
     async getAll() {
@@ -12,7 +12,7 @@ class BookService {
     }
     async borrowBook(bookId) {
         try {
-            const response = await this.apiClient.get('/');
+            const response = await this.api.get('/');
             return response.data;
         } catch (error) {
             throw error;

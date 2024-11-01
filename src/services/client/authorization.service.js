@@ -2,7 +2,7 @@ import createApiClient from "./api.auth.service";
 
 class AuthorizationServiceClient {
 
-    constructor(baseUrl = "/auth") {
+    constructor(baseUrl = "/api/auth") {
         this.api = createApiClient(baseUrl);
     }
 
