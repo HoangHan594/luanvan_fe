@@ -1,7 +1,7 @@
-import createApiClient from "./api.service"
+import createApiClient from "./api.reader"
 
 class ReaderService {
-    constructor(baseUrl = "https://luanvan-1-kmlh.onrender.com/reader") {
+    constructor(baseUrl = "/api/reader") {
         this.apiClient = createApiClient(baseUrl)
     }
 

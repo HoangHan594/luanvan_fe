@@ -32,7 +32,7 @@ export default defineConfig({
         port: 3001,
         proxy: {
             "/api": {
-                target: 'http://localhost:3000/', // Sử dụng target được xác định trước
+                target: 'https://luanvan-1-kmlh.onrender.com', // Sử dụng target được xác định trước
                 changeOrigin: true,
                 rewrite: path => path.replace(/^\/api/, ''),
             },

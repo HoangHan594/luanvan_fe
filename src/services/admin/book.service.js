@@ -1,7 +1,7 @@
 import createApiAdmin from "./api.service";
 
 class BookService {
-    constructor(baseUrl = "https://luanvan-1-kmlh.onrender.com/admin/books") {
+    constructor(baseUrl = "/api/admin/books") {
         this.api = createApiAdmin(baseUrl);
     }
     async getAll() {
