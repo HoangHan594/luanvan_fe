@@ -53,7 +53,7 @@ const clientRoutes = [{
             import ("@/views/client/pages/home/Home.vue"),
     },
     {
-        path: "/seen-books",
+        path: "https://luanvan-fe-3nzp.vercel.app/seen-books",
         name: "seen-books",
         component: () =>
             import ("@/views/client/pages/home/SeenBooks.vue"),
