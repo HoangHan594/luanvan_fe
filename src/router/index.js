@@ -8,6 +8,12 @@ const routes = [
     ...clientRoutes,
     ...adminRoutes,
     ...hiddenRoutes,
+    {
+        path: "/seen-books",
+        name: "seen-books",
+        component: () =>
+            import ("@/views/client/pages/home/SeenBooks.vue"),
+    },
 ]
 
 const router = createRouter({
