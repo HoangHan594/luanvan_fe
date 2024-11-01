@@ -24,7 +24,7 @@ import ClientAppFooter from "@/components/client/ClientAppFooter.vue";
 
 export default {
   computed: {},
-  name: "client-app-header",
+  name: "client-app-header-home",
   methods: {
     async logout() {
       // Xử lý đăng xuất ở đây

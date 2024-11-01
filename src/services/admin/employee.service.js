@@ -1,7 +1,7 @@
 import createApiAdmin from "./api.auth.service";
 
 class EmployeeService {
-    constructor(baseUrl = "https://luanvan-1-kmlh.onrender.com/admin/employee") {
+    constructor(baseUrl = "/api/admin/employee") {
         this.api = createApiAdmin(baseUrl);
     }
 
