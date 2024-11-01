@@ -3,7 +3,7 @@
     <div class="navbar-brand-container">
       <div class="mr-auto navbar-nav">
         <li class="nav-item">
-          <router-link :to="{ name: 'seen-books' }" class="nav-link" :class="{ active: $route.name === 'book-client' }">
+          <router-link to="/seen-books" class="nav-link" :class="{ active: $route.name === 'book-client' }">
             <h6><b>Xem sách</b></h6>
             <i class="fa-solid fa-book"></i>
           </router-link>
